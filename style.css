@@ -495,7 +495,7 @@ textarea {
 .project-card {
   max-width: 300px;
   width: 250px; /* Adjust the card width as needed */
-  height: 300px; /* Adjust the card height as needed */
+  height: 325px; /* Adjust the card height as needed */
   perspective: 1000px;
 }
 
@@ -551,8 +551,12 @@ textarea {
   padding-bottom: 20px;
 }
 
-.card-inner h2,p{
+.card-inner h2 {
   color: var(--bgDark);
+}
+
+.card-back {
+  font-weight: bolder;
 }
 
 .project-card img {

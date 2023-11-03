@@ -131,5 +131,6 @@ skillsSection.addEventListener("mouseout", () => {
   skillsTl.reverse(); // Reverse the animation when the mouse leaves the section
 });
 
-// Animations for the projects section
+// Animations for the footer section
+
 
