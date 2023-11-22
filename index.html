@@ -21,9 +21,14 @@
     <header>
         <div class="container">
             <nav class="flex items-centre justify-between">
-                <div class="left flex justfiy-right">
+                <div class="left flex justfiy-start">
                     <!-- <div class="logo"> <img src="https://images.pexels.com/photos/1382731/pexels-photo-1382731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="50px" alt="logo"> </div> -->
-                    <div>
+                    <div class="humburger" id="humburger">
+                        <div class="humLine"></div>
+                        <div class="humLine"></div>
+                        <div class="humLine"></div>
+                    </div>
+                    <div class="navLinks" id="navLinks">
                         <a href="#">Home</a>
                         <a href="#about-section">About</a>
                         <a href="#Skills">Skills</a></li>
@@ -36,64 +41,67 @@
                 </div>
             </nav>
 
-            <div class="hero flex items-centre justify-between">
-                <div class="left flex-1 justify-center">
-                    <img
-                        src="/Images/portrait-successful-programmer-game-developer-coder-guy-uses-computer-laptop-work-game-design-hacker-boy-generative-ai_117038-5477.jpg">
-                </div>
-                <div class="right flex-1">
-                    <h6></h6>
-                    <h1>
-                        I'm a Web<br />
-                        <span>Developer</span>
-                    </h1>
-                    <p>
-                        As a web developer, I specialize in transforming ideas into engaging online experiences. I craft
-                        elegant code to bring digital visions to life.
-                    </p>
-                    <div>
-                        <a href="https://drive.google.com/file/d/1Da8Ar7GSLzbcvKGXp09pxkVqFaJUcnHD/view?usp=sharing"
-                            target="_blank" download>
-                            <button class="btn btn-secondary">DOWNLOAD CV</button>
-                        </a>
-                    </div>
-                </div>
     </header>
+    <section class="hero">
+        <div class="left">
+            <img
+                src="/Images/portrait-successful-programmer-game-developer-coder-guy-uses-computer-laptop-work-game-design-hacker-boy-generative-ai_117038-5477.jpg">
+        </div>
+        <div class="right flex-1">
+            <h1>
+                I'm a Web<br />
+                <span>Developer</span>
+            </h1>
+            <p>
+                As a web developer, I specialize in transforming ideas into engaging online experiences. I craft
+                elegant code to bring digital visions to life.
+            </p>
+            <div>
+                <a href="https://drive.google.com/file/d/1Da8Ar7GSLzbcvKGXp09pxkVqFaJUcnHD/view?usp=sharing"
+                    target="_blank" download>
+                    <button class="btn btn-secondary">DOWNLOAD CV</button>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <section class="about" id="about-section">
-        <div class="container flex items-centre">
-            <div class="left flex-1 justify-right">
-                <img src="/Images/profile-pic.png" height="400px" alt="profile pic" />
-            </div>
-            <div class="right flex-1 about-trigger">
-                <h1>About <span>Me</span></h1>
-                <h3>Hello! I'm Karan Kr.</h3>
-                <p>
-                    I am a passionate web developer currently pursuing a Bachelor's degree in Computer Applications.
-                    With a keen interest in crafting exceptional online experiences, I have honed my skills in web
-                    development, specializing in WordPress and Shopify platforms. My journey in the world of web
-                    development has allowed me to transform creative ideas into functional and engaging websites. I'm
-                    dedicated to continuous learning and innovation, always striving to stay at the forefront of web
-                    technologies to deliver top-notch digital solutions.
-                </p>
-                <div>
-                    <a href="Aboutme.html" target="_blank">
-                        <button class="btn btn-secondary">Know More About Me</button>
-                    </a>
-                    <!-- <div class="socials"> 
-                    <a href="#"><img
-                            src="https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                            width="40px" /></a>
-                    <a href="#"><img
-                            src="https://images.pexels.com/photos/1382734/pexels-photo-1382734.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                            width="40px" /></a>
-                    <a href="#"><img
-                            src="https://images.pexels.com/photos/1462636/pexels-photo-1462636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                            width="40px" /></a>
-                    <a href="#"><img
-                            src="https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                            width="40px" /></a>
-                </div>-->
+        <div class="container">
+            <div class="aboutContainer">
+                <div class="leftAbout">
+                    <img src="/Images/profile-pic.png" alt="profile pic" />
+                </div>
+                <div class="rightAbout about-trigger">
+                    <h1>About <span>Me</span></h1>
+                    <h3>Hello! I'm Karan Kr.</h3>
+                    <p>
+                        I am a passionate web developer currently pursuing a Bachelor's degree in Computer Applications.
+                        With a keen interest in crafting exceptional online experiences, I have honed my skills in web
+                        development, specializing in WordPress and Shopify platforms. My journey in the world of web
+                        development has allowed me to transform creative ideas into functional and engaging websites.
+                        I'm
+                        dedicated to continuous learning and innovation, always striving to stay at the forefront of web
+                        technologies to deliver top-notch digital solutions.
+                    </p>
+                    <div>
+                        <a href="Aboutme.html" target="_blank">
+                            <button class="btn btn-secondary">Know More About Me</button>
+                        </a>
+                        <!-- <div class="socials">
+                        <a href="#"><img
+                                src="https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                width="40px" /></a>
+                        <a href="#"><img
+                                src="https://images.pexels.com/photos/1382734/pexels-photo-1382734.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                width="40px" /></a>
+                        <a href="#"><img
+                                src="https://images.pexels.com/photos/1462636/pexels-photo-1462636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                width="40px" /></a>
+                        <a href="#"><img
+                                src="https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                width="40px" /></a>
+                    </div> -->
+                    </div>
                 </div>
             </div>
     </section>
@@ -116,11 +124,11 @@
                 </div>
                 <div class="skill">
                     <i class="icon-c"></i>
-                    <span>C Programming</span>
+                    <span>C </span>
                 </div>
                 <div class="skill">
                     <i class="icon-cplusplus"></i>
-                    <span>C++ Programming</span>
+                    <span>C++ </span>
                 </div>
                 <div class="skill">
                     <i class="icon-wordpress"></i>
