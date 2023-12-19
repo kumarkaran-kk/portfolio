@@ -585,15 +585,14 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
-  /* Adjust the gap between cards as needed */
+  gap: 20px; /* Adjust the gap between cards as needed */
 }
 
 .project-card {
   max-width: 300px;
   width: 250px;
   /* Adjust the card width as needed */
-  height: 325px;
+  height: 330px;
   /* Adjust the card height as needed */
   perspective: 1000px;
 }
