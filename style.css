@@ -485,7 +485,7 @@ section.services .card-grid .card:hover p {
   /* Add space between the form and the text */
 }
 
-button{
+button {
   border-radius: 5px;
 }
 
@@ -716,4 +716,9 @@ textarea {
     transform: rotate(-45deg) translateY(-8px);
   }
 
+}
+
+section {
+  width: 100%;
+  overflow-x: hidden;
 }
