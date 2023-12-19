@@ -9,15 +9,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@200&display=swap"
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" />
-    <title>Portfolio</title>
+    <link rel="icon" href="/Images/fav icon.jpeg" type="image/x-icon">
+    <title>Karan Kr.</title>
 </head>
+
+<script>
+    document.addEventListener("visibilitychange", function() {
+        if (document.hidden) {
+            document.title = "Come back ;";
+        } else {
+            document.title = "Karan Kr.";
+        }
+    });
+</script>
 
 <!-- <body oncontextmenu="return false;"> -->
 
 <body>
+    <div id="progressBar" class="progressBar"></div>
+
     <header>
         <div class="container">
             <nav class="flex items-centre justify-between">
@@ -57,8 +71,7 @@
                 elegant code to bring digital visions to life.
             </p>
             <div>
-                <a href="https://drive.google.com/file/d/1Da8Ar7GSLzbcvKGXp09pxkVqFaJUcnHD/view?usp=sharing"
-                    target="_blank" download>
+                <a href="Karan's Resume.pdf" download>
                     <button class="btn btn-secondary">DOWNLOAD CV</button>
                 </a>
             </div>
@@ -110,31 +123,31 @@
         <div class="container">
             <h1 class="skills-head">Skills</h1>
             <div class="skills-list">
-                <div class="skill">
+                <div data-aos="fade-right" class="skill">
                     <i class="icon-html5"></i>
                     <span>HTML</span>
                 </div>
-                <div class="skill">
+                <div data-aos="fade-right" data-aos-delay="400" class="skill">
                     <i class="icon-css3"></i>
                     <span>CSS</span>
                 </div>
-                <div class="skill">
+                <div data-aos="fade-right" data-aos-delay="800" class="skill">
                     <i class="icon-javascript"></i>
                     <span>JavaScript</span>
                 </div>
-                <div class="skill">
+                <div data-aos="fade-right" data-aos-delay="1200" class="skill">
                     <i class="icon-c"></i>
                     <span>C </span>
                 </div>
-                <div class="skill">
+                <div data-aos="fade-right" data-aos-delay="1600" class="skill">
                     <i class="icon-cplusplus"></i>
                     <span>C++ </span>
                 </div>
-                <div class="skill">
+                <div data-aos="fade-right" data-aos-delay="2000" class="skill">
                     <i class="icon-wordpress"></i>
                     <span>WordPress</span>
                 </div>
-                <div class="skill">
+                <div data-aos="fade-right" data-aos-delay="2400" class="skill">
                     <i class="icon-shopify"></i>
                     <span>Shopify</span>
                 </div>
@@ -146,7 +159,7 @@
     <section class="experience" id="experience">
         <div class="container">
             <h1 class="experience-head">Experience</h1>
-            <div class="experience-item">
+            <div data-aos="fade-down-right" data-aos-delay="400" class="experience-item">
                 <h2>Web Development Intern - Unusual Digital</h2>
                 <p class="experience-date">July 2023 - September 2023</p>
                 <ul class="experience-highlights">
@@ -155,7 +168,7 @@
                     <!-- <li>Implemented custom features and functionality using HTML, CSS, and JavaScript.</li> -->
                 </ul>
             </div>
-            <div class="experience-item">
+            <div data-aos="fade-down-left" data-aos-delay="800" class="experience-item">
                 <h2>Freelance Web Developer</h2>
                 <p class="experience-date">October 2021 - present</p>
                 <ul class="experience-highlights">
@@ -163,7 +176,7 @@
                     <!-- <li>Designed and developed WordPress websites tailored to clients' needs.</li> -->
                     <!-- <li>Provided ongoing website maintenance and support.</li> -->
                 </ul>
-            </div>
+            </>
         </div>
     </section>
 
@@ -174,8 +187,8 @@
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="Images/weather app.png" alt="Project 1">
-                        <h2>Weather App</h2>
-                        <p>Weather App</p>
+                        <h2></h2>
+                        <h3>Weather App</h3>
                     </div>
                     <div class="card-back">
                         <h2>Weather App</h2>
@@ -194,8 +207,8 @@
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="Images/profile card.png" alt="Project 1">
-                        <h2>Profile Card</h2>
-                        <p>Description of Project 2</p>
+                        <h2></h2>
+                        <h3>Profile Card</h3>
                     </div>
                     <div class="card-back">
                         <h2>Profile Card</h2>
@@ -213,8 +226,8 @@
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="Images/calculator.png" alt="Project 1">
-                        <h2>Calculator</h2>
-                        <p>Description of Project 2</p>
+                        <h2></h2>
+                        <h3>Calculator</h3>
                     </div>
                     <div class="card-back">
                         <h2>Standard Calculator</h2>
@@ -230,8 +243,8 @@
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="Images/curd.png" alt="Project 1">
-                        <h2>Curd Operation</h2>
-                        <p>Description of Project 2</p>
+                        <h2></h2>
+                        <h3>Curd Operation</h3>
                     </div>
                     <div class="card-back">
                         <h2>Curd Operation</h2>
@@ -346,8 +359,9 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-
+        AOS.init();
     </script>
 </body>
 
@@ -355,7 +369,7 @@
     <div class="container">
         <div class="footer-content">
             <div class="left-content">
-                <p>&copy; 2023 Karan Kr.</p>
+                <p>© Copyright 2023. All rights reserved.</p>
             </div>
             <div class="right-content">
                 <div class="footer-social">

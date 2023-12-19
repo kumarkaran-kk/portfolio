@@ -1,3 +1,13 @@
+// for progress bar
+  const progressBar = document.getElementById("progressBar");
+  window.addEventListener("scroll", () => {
+    const scrollPercentage =
+      (window.scrollY /
+        (document.documentElement.scrollHeight - window.innerHeight)) *
+      100;
+    progressBar.style.height = `${scrollPercentage}%`;
+  });
+
 // Select all links with href starting with '#'
 const navLinks = document.querySelectorAll('a[href^="#"]');
 
@@ -63,60 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Animations for the skills section
-// Get the skills elements by class name
-const skills = document.querySelectorAll(".skill");
 
-// Create a GSAP timeline for the skills animation
-const skillsTl = gsap.timeline({ paused: true }); // Pause the timeline initially
-
-// Loop through each skill element and add animations
-skills.forEach((skill, index) => {
-  skillsTl.from(skill, {
-    opacity: 0,
-    x: -100,
-    duration: 0.5,
-    delay: index * 0.2, // Delay each skill's animation
-  });
-
-  const text = skill.querySelector("span");
-
-  skill.addEventListener("mouseenter", () => {
-    gsap.to(text, {
-      x: 0,
-      y: 0,
-      duration: 0.2,
-      repeat: 5,
-      yoyo: true,
-    });
-  });
-
-  skill.addEventListener("mouseout", () => {
-    gsap.to(text, {
-      x: 0,
-      y: 0,
-      duration: 0.2,
-    });
-  });
-
-  skill.addEventListener("mousemove", (event) => {
-    const rect = skill.getBoundingClientRect();
-
-    const relX = event.clientX - rect.left - rect.width / 2;
-    const relY = event.clientY - rect.top - rect.height / 2;
-
-    const angle = Math.atan2(relY, relX);
-    const maxRadius = (rect.width / 2) - (text.offsetWidth / 2);
-
-    const x = maxRadius * Math.cos(angle);
-    const y = maxRadius * Math.sin(angle);
-
-    gsap.to(text, {
-      x: x,
-      y: y,
-      duration: 0.2,
-    });
-  });
-});
 
 // Get the skills section by its ID
 const skillsSection = document.getElementById("Skills");
