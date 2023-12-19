@@ -540,13 +540,20 @@ textarea {
 .footer-content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+}
+
+@media screen and (max-width:550px) {
+  .footer-content {
+    justify-content: center;
+    gap: 10px;
+  }
 }
 
 /* Style the left content (name and copyright) */
 .left-content {
-  flex-grow: 1;
-  text-align: left;
+  text-align: center;
 }
 
 .left-content p {
@@ -557,8 +564,7 @@ textarea {
 
 /* Style the right content (social media icons) */
 .right-content {
-  flex-grow: 1;
-  text-align: right;
+  /* text-align: right; */
 }
 
 /* Style the social media icons */
