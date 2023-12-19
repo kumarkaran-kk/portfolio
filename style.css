@@ -563,9 +563,7 @@ textarea {
 }
 
 /* Style the right content (social media icons) */
-.right-content {
-  /* text-align: right; */
-}
+
 
 /* Style the social media icons */
 .footer-social a {
@@ -631,6 +629,7 @@ textarea {
 }
 
 .card-back {
+  text-align: justify;
   transform: rotateY(180deg);
   background: #f0f0f0;
   color: #333;
@@ -658,6 +657,7 @@ textarea {
 
 .card-back {
   font-weight: bolder;
+  text-align: center;
 }
 
 .project-card img {
