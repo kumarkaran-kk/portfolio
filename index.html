@@ -194,7 +194,7 @@
 
     <section class="pro" id="pro">
         <h2>Projects</h2>
-        <div class="project-cards">
+        <div class="project-cards" onmousemove="moveText(event)">
             <a href="https://karan-weather-app.netlify.app/" class="project-card" target="_blank">
                 <div class="card-inner">
                     <div class="card-front">
@@ -211,9 +211,23 @@
                             ✧ Implemented dynamic updates of weather conditions and
                             forecasts
                         </p>
+                        <div class="hover-text" id="hoverText">Click on me</div>
                     </div>
                 </div>
             </a>
+            <script>
+                function moveText(event) {
+                    const card = document.querySelector('.project-card');
+                    const hoverText = document.getElementById('hoverText');
+        
+                    // Calculate relative position within the card
+                    const x = event.clientX - card.getBoundingClientRect().left;
+                    const y = event.clientY - card.getBoundingClientRect().top;
+        
+                    // Update the position of the hover text
+                    hoverText.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
+                }
+            </script>
 
             <a href="https://karan-profile-card.netlify.app/" target="_blank" class="project-card">
                 <div class="card-inner">

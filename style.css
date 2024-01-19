@@ -621,6 +621,7 @@ textarea {
   background: var(--white);
   border: 1px solid #ccc;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .card-front {
@@ -632,6 +633,21 @@ textarea {
   transform: rotateY(180deg);
   background: #f0f0f0;
   color: #333;
+}
+
+.hover-text {
+  display: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  pointer-events: none;
+  text-align: center;
+}
+
+.project-card:hover .hover-text {
+  display: block;
 }
 
 /* h2, p { 
