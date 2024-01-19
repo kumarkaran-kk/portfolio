@@ -1,12 +1,12 @@
 // for progress bar
-  const progressBar = document.getElementById("progressBar");
-  window.addEventListener("scroll", () => {
-    const scrollPercentage =
-      (window.scrollY /
-        (document.documentElement.scrollHeight - window.innerHeight)) *
-      100;
-    progressBar.style.height = `${scrollPercentage}%`;
-  });
+const progressBar = document.getElementById("progressBar");
+window.addEventListener("scroll", () => {
+  const scrollPercentage =
+    (window.scrollY /
+      (document.documentElement.scrollHeight - window.innerHeight)) *
+    100;
+  progressBar.style.height = `${scrollPercentage}%`;
+});
 
 // Select all links with href starting with '#'
 const navLinks = document.querySelectorAll('a[href^="#"]');
@@ -108,3 +108,16 @@ humburger.addEventListener('click', () => {
     item.classList.toggle('hb')
   })
 })
+
+// for project section click on me 
+function moveText(event) {
+  const card = document.querySelector('.project-card');
+  const hoverText = document.getElementById('hoverText');
+
+  // Calculate relative position within the card
+  const x = event.clientX - card.getBoundingClientRect().left;
+  const y = event.clientY - card.getBoundingClientRect().top;
+
+  // Update the position of the hover text
+  hoverText.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
+}

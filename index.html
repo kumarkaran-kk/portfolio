@@ -215,20 +215,6 @@
                     </div>
                 </div>
             </a>
-            <script>
-                function moveText(event) {
-                    const card = document.querySelector('.project-card');
-                    const hoverText = document.getElementById('hoverText');
-        
-                    // Calculate relative position within the card
-                    const x = event.clientX - card.getBoundingClientRect().left;
-                    const y = event.clientY - card.getBoundingClientRect().top;
-        
-                    // Update the position of the hover text
-                    hoverText.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
-                }
-            </script>
-
             <a href="https://karan-profile-card.netlify.app/" target="_blank" class="project-card">
                 <div class="card-inner">
                     <div class="card-front">
@@ -243,7 +229,9 @@
                             ✧ Designed an attractive card layout to showcase personal
                             information.<br>
                             ✧ Implemented interactivity, such as hover effects and click
-                            events.</p>
+                            events.
+                        </p>
+                        <div class="hover-text" id="hoverText">Click on me</div>
                     </div>
                 </div>
             </a>
@@ -261,6 +249,7 @@
                             ✧ Designed an intuitive interface for easy arithmetic operations.<br>
                             ✧ Implemented input validation for a smooth user experience.
                         </p>
+                        <div class="hover-text" id="hoverText">Click on me</div>
                     </div>
                 </div>
             </a>
@@ -279,6 +268,7 @@
                             ✧ Designed an interactive and user-friendly interface for data management.<br>
                             ✧ Ensured secure data handling by implementing validation and protection mechanisms.
                         </p>
+                        <div class="hover-text" id="hoverText">Click on me</div>
                     </div>
                 </div>
             </a>
