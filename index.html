@@ -150,11 +150,11 @@
                 </div>
                 <div data-aos="fade-right" data-aos-delay="2400" class="skill">
                     <i class="icon-c"></i>
-                    <span>C </span>
+                    <span>C</span>
                 </div>
-                <div data-aos="fade-right" data-aos-delay="2800" class="skill">
+                <div data-aos="fade-right" data-aos-delay="2600" class="skill">
                     <i class="icon-cplusplus"></i>
-                    <span>C++ </span>
+                    <span>C++</span>
                 </div>
                 <div data-aos="fade-right" data-aos-delay="2900" class="skill">
                     <i class="icon-shopify"></i>
@@ -194,8 +194,9 @@
 
     <section class="pro" id="pro">
         <h2>Projects</h2>
-        <div class="project-cards" onmousemove="moveText(event)">
-            <a href="https://karan-weather-app.netlify.app/" class="project-card" target="_blank">
+        <div class="project-cards">
+            <a href="https://karan-weather-app.netlify.app/" class="project-card" target="_blank"
+                onmousemove="moveText(event)">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="Images/weather app1.png" alt="Project 1">
@@ -211,10 +212,12 @@
                             ✧ Implemented dynamic updates of weather conditions and
                             forecasts
                         </p>
+                        <div class="hover-text">Click on me</div>
                     </div>
                 </div>
             </a>
-            <a href="https://karan-profile-card.netlify.app/" target="_blank" class="project-card">
+            <a href="https://karan-profile-card.netlify.app/" target="_blank" class="project-card"
+                onmousemove="moveText(event)">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="Images/profile card.png" alt="Project 1">
@@ -230,11 +233,13 @@
                             ✧ Implemented interactivity, such as hover effects and click
                             events.
                         </p>
+                        <div class="hover-text">Click on me</div>
                     </div>
                 </div>
             </a>
 
-            <a href="https://standard-calculator-kk.netlify.app/" target="_blank" class="project-card">
+            <a href="https://standard-calculator-kk.netlify.app/" target="_blank" class="project-card"
+                onmousemove="moveText(event)">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="Images/calculator.png" alt="Project 1">
@@ -247,11 +252,13 @@
                             ✧ Designed an intuitive interface for easy arithmetic operations.<br>
                             ✧ Implemented input validation for a smooth user experience.
                         </p>
+                        <div class="hover-text">Click on me</div>
                     </div>
                 </div>
             </a>
 
-            <a href="http://curd-operation-kk.infinityfreeapp.com/" target="_blank" class="project-card">
+            <a href="http://curd-operation-kk.infinityfreeapp.com/" target="_blank" class="project-card"
+                onmousemove="moveText(event)">
                 <div class="card-inner" onmousemove="moveText(event)">
                     <div class="card-front">
                         <img src="Images/curd.png" alt="Project 1">
@@ -265,6 +272,7 @@
                             ✧ Designed an interactive and user-friendly interface for data management.<br>
                             ✧ Ensured secure data handling by implementing validation and protection mechanisms.
                         </p>
+                        <div class="hover-text">Click on me</div>
                     </div>
                 </div>
             </a>
@@ -306,13 +314,21 @@
 
     <section class="get-in-touch" id="get-in-touch">
         <div class="container">
+            <div class="center-content">
+                <h2>Get in Touch</h2>
+                <p>Have a project in mind or just want to say hello? Feel free to reach out to me. I'd love to
+                    hear from you!</p>
+            </div>
             <div class="get-in-touch-content">
                 <div class="left-section">
-                    <div class="center-content">
-                        <h2>Get in Touch</h2>
-                        <p>Have a project in mind or just want to say hello? Feel free to reach out to me. I'd love to
-                            hear from you!</p>
-                        <!--<button class="btn btn-primary">Contact Me</button>-->
+
+                    <div class="contact-card">
+                            <img src="Images/contact1.png" alt="Handshake">
+                        <h2><br><b>Karan Kumar</b></h2>
+                        <p>Web Developer</p>
+                        <p>I am available for freelance work. Connect with me via and call into my account.</p>
+                        <p>Email: KumarKaran02175@gmail.com</p>
+                        <p>Phone: +919310168682</p>
                     </div>
                 </div>
                 <div class="right-section">
@@ -349,8 +365,8 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var scrollToContactButton = document.getElementById("scrollToContact");

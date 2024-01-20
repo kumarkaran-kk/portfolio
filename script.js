@@ -111,13 +111,14 @@ humburger.addEventListener('click', () => {
 
 // for project section click on me 
 function moveText(event) {
-  const card = document.querySelector('.project-card');
-  const hoverText = document.getElementById('hoverText');
+  const card = event.currentTarget;
+  const hoverText = card.querySelector('.hover-text');
 
   // Calculate relative position within the card
   const x = event.clientX - card.getBoundingClientRect().left;
   const y = event.clientY - card.getBoundingClientRect().top;
 
   // Update the position of the hover text
-  hoverText.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
+  hoverText.style.left = `${x}px`;
+  hoverText.style.top = `${y}px`;
 }
