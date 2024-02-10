@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Aboutme.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/Images/fav icon.jpeg" type="image/x-icon">
     <title>About Me</title>
 </head>
 
 <body>
+    <script>
+        document.addEventListener("visibilitychange", function () {
+            if (document.hidden) {
+                document.title = "Come back ;";
+            } else {
+                document.title = "About Me";
+            }
+        });
+    </script>
     <header>
         <div class="container">
             <nav class="flex items-centre justify-between">
@@ -23,9 +33,9 @@
                         <a href="#">More</a>-->
                     </div>
                 </div>
-                <a href="http://127.0.0.1:5501/index.html#get-in-touch" target="_blank">
+                <a href="https://karankr.netlify.app/#get-in-touch" target="_blank">
                     <button class="btn btn-primary">Contact</button>
-                  </a>
+                </a>
             </nav>
         </div>
     </header>
@@ -37,28 +47,31 @@
                 <div class="bio">
                     <h2>Hi, I'm Karan Kr.</h2>
                     <p>
-                        Hello! I'm Karan Kumar, a dedicated and motivated third-year student on the path to completing
-                        my Bachelor's degree in Computer Applications by 2024. My passion for technology and web
-                        development drives me to excel in my studies and continuously expand my skill set.
-                    </p>
+                        Hello there! I'm Karan Kumar, a third-year Computer Applications student with a keen interest in
+                        web development. My journey into the tech world has been shaped by a passion for creating
+                        engaging and innovative online experiences.
+                    </p>&nbsp;
                     <p>
-                        I possess a strong proficiency in programming languages such as C and C++, which have laid a
-                        robust foundation for my journey into web development. My expertise extends to HTML and CSS,
-                        where I focus on creating visually appealing and user-friendly web designs. My goal is to
-                        transform creative ideas into dynamic, interactive web applications that captivate users and
-                        provide lasting value.
-                    </p>
+                        My proficiency spans a range of technologies, starting with <strong>HTML</strong> and
+                        <strong>CSS</strong> for crafting visually
+                        appealing layouts. <strong>JavaScript</strong> is my playground for adding interactivity and
+                        dynamism to
+                        websites. Venturing into backend development, I've embraced <strong>PHP</strong> and
+                        <strong>MySQL</strong> to build robust and
+                        scalable solutions. <strong>Git</strong> is my trusted companion for version control, ensuring
+                        seamless
+                        collaboration on projects.
+                    </p>&nbsp;
                     <p>
-                        In addition to my programming skills, I am well-versed in essential tools such as MS Office
-                        Word, Excel, and PowerPoint, which complement my ability to communicate and present my work
-                        effectively. I am enthusiastic about taking on challenging web development and design projects
-                        that allow me to push my boundaries and create impactful user experiences.
-                    </p>
+                        Driven by a quest for knowledge, I'm actively exploring advanced JavaScript concepts, honing my
+                        skills in backend technologies, and diving deep into database management. Staying abreast of the
+                        latest industry trends keeps me inspired to push the boundaries of what's possible in web
+                        development.
+                    </p>&nbsp;
                     <p>
-                        To further enhance my abilities, I am actively pursuing advanced knowledge in JavaScript,
-                        backend development, and database management. My dedication extends to mastering responsive
-                        design principles and delving into user experience (UX) concepts to ensure that every website I
-                        create not only looks great but also functions flawlessly.
+                        Looking ahead, I'm excited about contributing my skills to dynamic projects that challenge and
+                        inspire growth. I'm particularly drawn to opportunities that allow me to blend creativity with
+                        technology, creating digital solutions that leave a lasting impact.
                     </p>
                 </div>
             </div>
@@ -68,20 +81,19 @@
         <div class="container">
             <div class="footer-content">
                 <div class="left-content">
-                    <p>&copy; 2023 Karan Kr.</p>
+                    <p>&copy; 2024 Karan Kr.</p>
                 </div>
                 <div class="right-content">
                     <div class="footer-social">
                         <!-- Social media icons or links -->
                         <a href="https://github.com/kumarkaran-kk" target="_blank">
-                            <img src="/Images/icons8-github-56.png" alt="Git">
+                            <img class="social-icon" src="/Images/icons8-github.gif" alt="Git">
                         </a>
                         <a href="https://www.linkedin.com/in/karan-kumar-947817206/" target="_blank">
-                            <img src="/Images/LinkedIn.png" alt="LinkedIn">
+                            <img class="social-icon" src="/Images/icons8-linkedin.gif" alt="LinkedIn">
                         </a>
-                        
-                        <a href="https://twitter.com/kumarkaran_kk?t=qaoR8DV2-80hmcYYTh9tg&s=09" target="_blank">
-                            <img src="/Images/twitter.png" alt="Twitter">
+                        <a href="https://twitter.com/kumarkaran_kk" target="_blank">
+                            <img class="social-icon" src="/Images/icons8-twitter.gif" alt="Twitter">
                         </a>
                     </div>
                 </div>
@@ -92,6 +104,7 @@
                 background-color: var(--bgDark) !important;
                 color: #fff !important;
             }
+
             .main-footer p {
                 color: #fff;
             }

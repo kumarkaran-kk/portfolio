@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta name="google-site-verification" content="jUr3_Shr0KKSP_-_9VAJ6sXFL6aTtdO9sScBs4L6IwU" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
@@ -9,21 +10,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@200&display=swap"
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" />
-    <title>Portfolio</title>
+    <link rel="icon" href="/Images/fav icon.jpeg" type="image/x-icon">
+    <title>Karan Kr.</title>
 </head>
+
+<script>
+    document.addEventListener("visibilitychange", function () {
+        if (document.hidden) {
+            document.title = "Come back ;";
+        } else {
+            document.title = "Karan Kr.";
+        }
+    });
+</script>
 
 <!-- <body oncontextmenu="return false;"> -->
 
 <body>
+    <div id="progressBar" class="progressBar"></div>
+
     <header>
         <div class="container">
             <nav class="flex items-centre justify-between">
-                <div class="left flex justfiy-right">
+                <div class="left flex justfiy-start">
                     <!-- <div class="logo"> <img src="https://images.pexels.com/photos/1382731/pexels-photo-1382731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="50px" alt="logo"> </div> -->
-                    <div>
+                    <div class="humburger" id="humburger">
+                        <div class="humLine"></div>
+                        <div class="humLine"></div>
+                        <div class="humLine"></div>
+                    </div>
+                    <div class="navLinks" id="navLinks">
                         <a href="#">Home</a>
                         <a href="#about-section">About</a>
                         <a href="#Skills">Skills</a></li>
@@ -36,64 +56,66 @@
                 </div>
             </nav>
 
-            <div class="hero flex items-centre justify-between">
-                <div class="left flex-1 justify-center">
-                    <img
-                        src="/Images/portrait-successful-programmer-game-developer-coder-guy-uses-computer-laptop-work-game-design-hacker-boy-generative-ai_117038-5477.jpg">
-                </div>
-                <div class="right flex-1">
-                    <h6></h6>
-                    <h1>
-                        I'm a Web<br />
-                        <span>Developer</span>
-                    </h1>
-                    <p>
-                        As a web developer, I specialize in transforming ideas into engaging online experiences. I craft
-                        elegant code to bring digital visions to life.
-                    </p>
-                    <div>
-                        <a href="https://drive.google.com/file/d/1Da8Ar7GSLzbcvKGXp09pxkVqFaJUcnHD/view?usp=sharing"
-                            target="_blank" download>
-                            <button class="btn btn-secondary">DOWNLOAD CV</button>
-                        </a>
-                    </div>
-                </div>
     </header>
+    <section class="hero">
+        <div class="left">
+            <img
+                src="/Images/portrait-successful-programmer-game-developer-coder-guy-uses-computer-laptop-work-game-design-hacker-boy-generative-ai_117038-5477.jpg">
+        </div>
+        <div class="right flex-1">
+            <h1>
+                I'm a Web<br />
+                <span>Developer</span>
+            </h1>
+            <p>
+                As a web developer, I specialize in transforming ideas into engaging online experiences. I craft
+                elegant code to bring digital visions to life.
+            </p>
+            <div>
+                <a href="Karan's Resume.pdf" download>
+                    <button class="btn btn-secondary">DOWNLOAD CV</button>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <section class="about" id="about-section">
-        <div class="container flex items-centre">
-            <div class="left flex-1 justify-right">
-                <img src="/Images/profile-pic.png" height="400px" alt="profile pic" />
-            </div>
-            <div class="right flex-1 about-trigger">
-                <h1>About <span>Me</span></h1>
-                <h3>Hello! I'm Karan Kr.</h3>
-                <p>
-                    I am a passionate web developer currently pursuing a Bachelor's degree in Computer Applications.
-                    With a keen interest in crafting exceptional online experiences, I have honed my skills in web
-                    development, specializing in WordPress and Shopify platforms. My journey in the world of web
-                    development has allowed me to transform creative ideas into functional and engaging websites. I'm
-                    dedicated to continuous learning and innovation, always striving to stay at the forefront of web
-                    technologies to deliver top-notch digital solutions.
-                </p>
-                <div>
-                    <a href="Aboutme.html" target="_blank">
-                        <button class="btn btn-secondary">Know More About Me</button>
-                    </a>
-                    <!-- <div class="socials"> 
-                    <a href="#"><img
-                            src="https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                            width="40px" /></a>
-                    <a href="#"><img
-                            src="https://images.pexels.com/photos/1382734/pexels-photo-1382734.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                            width="40px" /></a>
-                    <a href="#"><img
-                            src="https://images.pexels.com/photos/1462636/pexels-photo-1462636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                            width="40px" /></a>
-                    <a href="#"><img
-                            src="https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                            width="40px" /></a>
-                </div>-->
+        <div class="container">
+            <div class="aboutContainer">
+                <div class="leftAbout">
+                    <img src="/Images/profile-pic.png" alt="profile pic" />
+                </div>
+                <div class="rightAbout about-trigger">
+                    <h1>About <span>Me</span></h1>
+                    <h3>Hello! I'm Karan Kr.</h3>
+                    <p>
+                        I am a passionate web developer currently pursuing a Bachelor's degree in Computer Applications.
+                        With a keen interest in crafting exceptional online experiences, I have honed my skills in web
+                        development, specializing in WordPress and Shopify platforms. My journey in the world of web
+                        development has allowed me to transform creative ideas into functional and engaging websites.
+                        I'm
+                        dedicated to continuous learning and innovation, always striving to stay at the forefront of web
+                        technologies to deliver top-notch digital solutions.
+                    </p>
+                    <div>
+                        <a href="Aboutme.html" target="_blank">
+                            <button class="btn btn-secondary">Know More About Me</button>
+                        </a>
+                        <!-- <div class="socials">
+                        <a href="#"><img
+                                src="https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                width="40px" /></a>
+                        <a href="#"><img
+                                src="https://images.pexels.com/photos/1382734/pexels-photo-1382734.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                width="40px" /></a>
+                        <a href="#"><img
+                                src="https://images.pexels.com/photos/1462636/pexels-photo-1462636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                width="40px" /></a>
+                        <a href="#"><img
+                                src="https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                width="40px" /></a>
+                    </div> -->
+                    </div>
                 </div>
             </div>
     </section>
@@ -102,31 +124,39 @@
         <div class="container">
             <h1 class="skills-head">Skills</h1>
             <div class="skills-list">
-                <div class="skill">
+                <div data-aos="fade-right" class="skill">
                     <i class="icon-html5"></i>
                     <span>HTML</span>
                 </div>
-                <div class="skill">
+                <div data-aos="fade-right" data-aos-delay="400" class="skill">
                     <i class="icon-css3"></i>
                     <span>CSS</span>
                 </div>
-                <div class="skill">
+                <div data-aos="fade-right" data-aos-delay="800" class="skill">
+                    <i class="icon-css3"></i>
+                    <span>PHP</span>
+                </div>
+                <div data-aos="fade-right" data-aos-delay="1200" class="skill">
+                    <i class="icon-css3"></i>
+                    <span>MySQL</span>
+                </div>
+                <div data-aos="fade-right" data-aos-delay="1600" class="skill">
                     <i class="icon-javascript"></i>
                     <span>JavaScript</span>
                 </div>
-                <div class="skill">
-                    <i class="icon-c"></i>
-                    <span>C Programming</span>
-                </div>
-                <div class="skill">
-                    <i class="icon-cplusplus"></i>
-                    <span>C++ Programming</span>
-                </div>
-                <div class="skill">
+                <div data-aos="fade-right" data-aos-delay="2000" class="skill">
                     <i class="icon-wordpress"></i>
                     <span>WordPress</span>
                 </div>
-                <div class="skill">
+                <div data-aos="fade-right" data-aos-delay="2400" class="skill">
+                    <i class="icon-c"></i>
+                    <span>C</span>
+                </div>
+                <div data-aos="fade-right" data-aos-delay="2600" class="skill">
+                    <i class="icon-cplusplus"></i>
+                    <span>C++</span>
+                </div>
+                <div data-aos="fade-right" data-aos-delay="2800" class="skill">
                     <i class="icon-shopify"></i>
                     <span>Shopify</span>
                 </div>
@@ -138,105 +168,114 @@
     <section class="experience" id="experience">
         <div class="container">
             <h1 class="experience-head">Experience</h1>
-            <div class="experience-item">
-                <h2>Web Development Intern - Unusual Digital</h2>
+            <div data-aos="fade-down-right" data-aos-delay="400" class="experience-item">
+                <h2>Web Developer - Unusual Digital</h2>
                 <p class="experience-date">July 2023 - September 2023</p>
                 <ul class="experience-highlights">
-                    <!-- <li>Developed and maintained responsive websites for clients.</li> -->
-                    <!-- <li>Collaborated with cross-functional teams to deliver projects on time.</li> -->
-                    <!-- <li>Implemented custom features and functionality using HTML, CSS, and JavaScript.</li> -->
+                    <li>During my internship, I created a WordPress plugin from scratch, showcasing my development
+                        skills.</li>
+                    <li>I also contributed to client projects by working on the Shopify platform, developing and
+                        enhancing their websites.</li>
+                    <li>Additionally, I gained valuable experience in WordPress by editing and customizing existing
+                        websites, further honing my proficiency in web development.</li>
                 </ul>
             </div>
-            <div class="experience-item">
+            <div data-aos="fade-down-left" data-aos-delay="800" class="experience-item">
                 <h2>Freelance Web Developer</h2>
                 <p class="experience-date">October 2021 - present</p>
                 <ul class="experience-highlights">
                     <!-- <li>Worked on a variety of web development projects for clients in different industries.</li> -->
-                    <!-- <li>Designed and developed WordPress websites tailored to clients' needs.</li> -->
-                    <!-- <li>Provided ongoing website maintenance and support.</li> -->
+                    <li>Designed and developed WordPress websites tailored to clients' needs.</li>
+                    <li>Provided ongoing website maintenance and support.</li>
                 </ul>
+                </>
             </div>
-        </div>
     </section>
 
     <section class="pro" id="pro">
         <h2>Projects</h2>
         <div class="project-cards">
-            <a href="https://karan-weather-app.netlify.app/" class="project-card" target="_blank">
+            <a href="https://karan-weather-app.netlify.app/" class="project-card" target="_blank"
+                onmousemove="moveText(event)">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="Images/weather app.png" alt="Project 1">
-                        <h2>Weather App</h2>
-                        <p>Weather App</p>
+                        <img src="Images/weather app1.png" alt="Project 1">
+                        <h2></h2>
+                        <h3>Weather App</h3>
                     </div>
                     <div class="card-back">
                         <h2>Weather App</h2>
-                        <p>* Developed a weather application using HTML, CSS, and
+                        <p> ✧ Developed a weather application using HTML, CSS, and
                             JavaScript.<br>
-                            * Integrated an API to fetch real-time weather data based on
+                            ✧ Integrated an API to fetch real-time weather data based on
                             user input.<br>
-                            * Implemented dynamic updates of weather conditions and
+                            ✧ Implemented dynamic updates of weather conditions and
                             forecasts
                         </p>
+                        <div class="hover-text">Click on me</div>
                     </div>
                 </div>
             </a>
-
-            <a href="https://karan-profile-card.netlify.app/" target="_blank" class="project-card">
+            <a href="https://karan-profile-card.netlify.app/" target="_blank" class="project-card"
+                onmousemove="moveText(event)">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="Images/profile card.png" alt="Project 1">
-                        <h2>Profile Card</h2>
-                        <p>Description of Project 2</p>
+                        <h2></h2>
+                        <h3>Profile Card</h3>
                     </div>
                     <div class="card-back">
                         <h2>Profile Card</h2>
-                        <p>* Developed a profile card component using HTML, CSS, and
+                        <p> ✧ Developed a profile card component using HTML, CSS, and
                             JavaScript.<br>
-                            * Designed an attractive card layout to showcase personal
+                            ✧ Designed an attractive card layout to showcase personal
                             information.<br>
-                            * Implemented interactivity, such as hover effects and click
-                            events.</p>
+                            ✧ Implemented interactivity, such as hover effects and click
+                            events.
+                        </p>
+                        <div class="hover-text">Click on me</div>
                     </div>
                 </div>
             </a>
 
-            <a href="https://standard-calculator-kk.netlify.app/" target="_blank" class="project-card">
+            <a href="https://standard-calculator-kk.netlify.app/" target="_blank" class="project-card"
+                onmousemove="moveText(event)">
                 <div class="card-inner">
                     <div class="card-front">
                         <img src="Images/calculator.png" alt="Project 1">
-                        <h2>Calculator</h2>
-                        <p>Description of Project 2</p>
+                        <h2></h2>
+                        <h3>Calculator</h3>
                     </div>
                     <div class="card-back">
                         <h2>Standard Calculator</h2>
-                        <p> * Developed a complete standard calculator using HTML, CSS, and JavaScript.<br>
-                            * Designed an intuitive interface for easy arithmetic operations.<br>
-                            * Implemented input validation for a smooth user experience.
+                        <p> ✧ Developed a complete standard calculator using HTML, CSS, and JavaScript.<br>
+                            ✧ Designed an intuitive interface for easy arithmetic operations.<br>
+                            ✧ Implemented input validation for a smooth user experience.
                         </p>
+                        <div class="hover-text">Click on me</div>
                     </div>
                 </div>
             </a>
 
-            <a href="http://curd-operation-kk.infinityfreeapp.com/" target="_blank" class="project-card">
-                <div class="card-inner">
+            <a href="http://curd-operation-kk.infinityfreeapp.com/" target="_blank" class="project-card"
+                onmousemove="moveText(event)">
+                <div class="card-inner" onmousemove="moveText(event)">
                     <div class="card-front">
                         <img src="Images/curd.png" alt="Project 1">
-                        <h2>Curd Operation</h2>
-                        <p>Description of Project 2</p>
+                        <h2></h2>
+                        <h3>Crud Operation</h3>
                     </div>
                     <div class="card-back">
-                        <h2>Curd Operation</h2>
-                        <p>* Created a responsive web application for CRUD operations using HTML, CSS, JavaScript, PHP,
+                        <h2>Crud Operation</h2>
+                        <p> ✧ Created a responsive web application for CRUD operations using HTML, CSS, JavaScript, PHP,
                             and MySQLi.<br>
-                            * Designed an interactive and user-friendly interface for data management.<br>
-                            * Ensured secure data handling by implementing validation and protection mechanisms.
+                            ✧ Designed an interactive and user-friendly interface for data management.<br>
+                            ✧ Ensured secure data handling by implementing validation and protection mechanisms.
                         </p>
+                        <div class="hover-text">Click on me</div>
                     </div>
                 </div>
             </a>
-
-            <!-- Add more project cards as needed -->
         </div>
     </section>
 
@@ -275,13 +314,21 @@
 
     <section class="get-in-touch" id="get-in-touch">
         <div class="container">
+            <div class="center-content">
+                <h2>Get in Touch</h2>
+                <p>Have a project in mind or just want to say hello? Feel free to reach out to me. I'd love to
+                    hear from you!</p>
+            </div>
             <div class="get-in-touch-content">
                 <div class="left-section">
-                    <div class="center-content">
-                        <h2>Get in Touch</h2>
-                        <p>Have a project in mind or just want to say hello? Feel free to reach out to me. I'd love to
-                            hear from you!</p>
-                        <!--<button class="btn btn-primary">Contact Me</button>-->
+
+                    <div class="contact-card">
+                            <img src="Images/contact1.png" alt="Handshake">
+                        <h2><br><b>Karan Kumar</b></h2>
+                        <p>Web Developer</p>
+                        <p>I am available for freelance work. Connect with me via and call into my account.</p>
+                        <p>Email: KumarKaran02175@gmail.com</p>
+                        <p>Phone: +919310168682</p>
                     </div>
                 </div>
                 <div class="right-section">
@@ -318,8 +365,8 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var scrollToContactButton = document.getElementById("scrollToContact");
@@ -338,8 +385,9 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="script.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-
+        AOS.init();
     </script>
 </body>
 
@@ -347,7 +395,7 @@
     <div class="container">
         <div class="footer-content">
             <div class="left-content">
-                <p>&copy; 2023 Karan Kr.</p>
+                <p>&#9426; Copyright 2024. All rights reserved.</p>
             </div>
             <div class="right-content">
                 <div class="footer-social">
