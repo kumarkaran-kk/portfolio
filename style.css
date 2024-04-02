@@ -641,9 +641,9 @@ textarea {
 
 .project-card {
   max-width: 300px;
-  width: 250px;
+  width: 280px;
   /* Adjust the card width as needed */
-  height: 330px;
+  height: 400px;
   /* Adjust the card height as needed */
   perspective: 1000px;
 }
