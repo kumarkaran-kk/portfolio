@@ -90,6 +90,37 @@ body {
   margin: 0 auto;
 }
 
+svg {
+	font-family: "Poppins", sans-serif;
+	width: 100%;
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #1DDDBD;
+	font-size: var(--headingFontSize)
+}
+
+@media screen and (min-width:768px) {
+  svg text{
+    font-size: 60px;
+  }
+}
+
+@keyframes stroke {
+	0%   {
+		fill: rgba(29,221,189,0); stroke: rgba(29,221,189,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(29,221,189,0); stroke: rgba(29,221,189,1); }
+	80%  {fill: rgba(29,221,189,0); stroke: rgba(29,221,189,1); stroke-width: 3; }
+	100% {
+		fill: rgba(29,221,189,1); stroke: rgba(29,221,189,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -104,6 +135,10 @@ body {
   width: 90%;
   height: auto;
   /* margin: 70px; */
+}
+
+.left img:hover{
+  border: solid;
 }
 
 .hero .right {
@@ -133,6 +168,13 @@ body {
   .hero {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: none;
+    
+  }
+}
+
+@media screen and (max-width:768px) {
+  .hero .right h1 {
+    line-height: 0;
   }
 }
 
