@@ -43,7 +43,7 @@ humburger.addEventListener('click', () => {
   })
 })
 
-// for project section click on me 
+// for project section click on me button
 function moveText(event) {
   const card = event.currentTarget;
   const hoverText = card.querySelector('.hover-text');
@@ -56,3 +56,50 @@ function moveText(event) {
   hoverText.style.left = `${x}px`;
   hoverText.style.top = `${y}px`;
 }
+
+
+// For skills section animation on hover
+// Get the skills elements by class name
+const skills = document.querySelectorAll(".skill span");
+const tl = gsap.timeline({ paused: true }); // Pause the timeline initially
+skills.forEach((text, index) => {
+  text.parentNode.addEventListener("mouseenter", () => {
+    gsap.to(text, {
+      x: 0,
+      y: 0,
+      opacity: 1, 
+      duration: 0.2,
+      repeat: 5,
+      yoyo: true,
+    });
+  });
+
+  text.parentNode.addEventListener("mousemove", (event) => {
+    const rect = text.parentNode.getBoundingClientRect();
+    const relX = event.clientX - rect.left - rect.width / 2;
+    const relY = event.clientY - rect.top - rect.height / 2;
+    const angle = Math.atan2(relY, relX);
+    const maxRadius = (rect.width / 2) - (text.offsetWidth / 2);
+    const x = maxRadius * Math.cos(angle);
+    const y = maxRadius * Math.sin(angle);
+    
+    gsap.to(text, {
+      x: x,
+      y: y,
+      duration: 0.2,
+    });
+  });
+
+  text.parentNode.addEventListener("mouseleave", () => {
+    gsap.to(text, {
+      x: 0,
+      y: 0,
+      duration: 0.2,
+    });
+  });
+});
+
+const skillsSection = document.getElementById("Skills");
+skillsSection.addEventListener("mouseover", () => {
+  tl.play(); // Play the GSAP timeline when you hover over the section
+});
