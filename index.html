@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <meta name="google-site-verification" content="jUr3_Shr0KKSP_-_9VAJ6sXFL6aTtdO9sScBs4L6IwU" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
@@ -28,9 +27,9 @@
     });
 </script>
 
-<!-- <body oncontextmenu="return false;"> -->
+<body oncontextmenu="return false;">
 
-<body>
+<!-- <body> -->
     <div id="progressBar" class="progressBar"></div>
 
     <header>
@@ -76,8 +75,8 @@
                 elegant code to bring digital visions to life.
             </p>
             <div>
-                <a href="Karan's Resume.pdf" download>
-                    <button class="btn btn-secondary">DOWNLOAD CV</button>
+                <a href="Karan's_Resume.pdf" download>
+                    <button class="btn btn-secondary">Download Resume</button>
                 </a>
             </div>
         </div>
@@ -128,41 +127,42 @@
         <div class="container">
             <h1 class="skills-head">Skills</h1>
             <div class="skills-list">
+
                 <div data-aos="fade-right" class="skill">
                     <i class="icon-html5"></i>
-                    <span>HTML</span>
+                    <span>React</span>
                 </div>
-                <div data-aos="fade-right" data-aos-delay="400" class="skill">
-                    <i class="icon-css3"></i>
-                    <span>CSS</span>
-                </div>
-                <div data-aos="fade-right" data-aos-delay="800" class="skill">
-                    <i class="icon-css3"></i>
-                    <span>PHP</span>
-                </div>
-                <div data-aos="fade-right" data-aos-delay="1200" class="skill">
-                    <i class="icon-css3"></i>
-                    <span>MySQL</span>
-                </div>
-                <div data-aos="fade-right" data-aos-delay="1600" class="skill">
+                <div data-aos="fade-right" data-aos-delay="200" class="skill">
                     <i class="icon-javascript"></i>
                     <span>JavaScript</span>
                 </div>
-                <div data-aos="fade-right" data-aos-delay="2000" class="skill">
+                <div data-aos="fade-right" data-aos-delay="400" class="skill">
+                    <i class="icon-css3"></i>
+                    <span>PHP</span>
+                </div>
+                <div data-aos="fade-right" data-aos-delay="600" class="skill">
+                    <i class="icon-css3"></i>
+                    <span>MySQL</span>
+                </div>
+                <div data-aos="fade-right" data-aos-delay="800" class="skill">
                     <i class="icon-wordpress"></i>
                     <span>WordPress</span>
                 </div>
-                <div data-aos="fade-right" data-aos-delay="2400" class="skill">
-                    <i class="icon-c"></i>
+                <div data-aos="fade-right" data-aos-delay="1000" class="skill">
+                    <i class="icon-html5"></i>
                     <span>Shopify</span>
                 </div>
-                <div data-aos="fade-right" data-aos-delay="2600" class="skill">
-                    <i class="icon-cplusplus"></i>
-                    <span>C</span>
+                <div data-aos="fade-right" data-aos-delay="1200" class="skill">
+                    <i class="icon-css3"></i>
+                    <span>HTML</span>
                 </div>
-                <div data-aos="fade-right" data-aos-delay="2800" class="skill">
+                <div data-aos="fade-right" data-aos-delay="1400" class="skill">
+                    <i class="icon-c"></i>
+                    <span>CSS</span>
+                </div>
+                <div data-aos="fade-right" data-aos-delay="1800" class="skill">
                     <i class="icon-shopify"></i>
-                    <span>C++</span>
+                    <span>Bootstrap</span>
                 </div>
             </div>
         </div>
@@ -197,7 +197,7 @@
     </section>
 
     <section class="pro" id="pro">
-        <h2>Projects</h2>
+        <h2>Selected Projects</h2>
         <div class="project-cards">
             <a href="https://karan-weather-app.netlify.app/" class="project-card" target="_blank"
                 onmousemove="moveText(event)">
@@ -224,7 +224,7 @@
                 onmousemove="moveText(event)">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="Images/profile card.png" alt="Project 1">
+                        <img src="Images/profile card.png" alt="Project 2">
                         <h2></h2>
                         <h3>Profile Card</h3>
                     </div>
@@ -246,7 +246,7 @@
                 onmousemove="moveText(event)">
                 <div class="card-inner" onmousemove="moveText(event)">
                     <div class="card-front">
-                        <img src="Images/curd.png" alt="Project 1">
+                        <img src="Images/curd.png" alt="Project 3">
                         <h2></h2>
                         <h3>Crud Operation</h3>
                     </div>
@@ -266,7 +266,7 @@
                 onmousemove="moveText(event)">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="Images/Friendify.png" alt="Project 1">
+                        <img src="Images/Friendify.png" alt="Project 4">
                         <h2></h2>
                         <h3>Friendify</h3>
                     </div>
@@ -332,7 +332,7 @@
                         <img src="Images/contact1.png" alt="Handshake">
                         <h2><br><b>Karan Kumar</b></h2>
                         <p>Web Developer</p>
-                        <p>I am available for freelance work. Connect with me via and call into my account.</p>
+                        <p>I am available to join your team and your projects!</p>
                         <a href="mailto:kumarkaran02175@gmail.com" style="text-decoration: none; color: inherit;">Email:
                             KumarKaran02175@gmail.com</a><br>
                         <p>Phone: +919310168682</p>
@@ -341,28 +341,29 @@
                 <div class="right-section">
                     <form onsubmit="emailSend(); reset(); return false;">
                         <div class="form-group">
-                            <label for="name">Name:</label>
+                            <label for="name">What's your name:</label>
                             <input type="text" id="name" name="name" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="email">Email:</label>
+                            <label for="email">And your email address?</label>
                             <input type="email" id="email" name="email" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="phone">Phone Number:</label>
-                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">And your phone number?</label>
+                            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}"
+                                title="Enter a valid 10-digit phone number">
                         </div>
 
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <label for="subject">Subject:</label>
                             <input type="text" id="subject" name="subject" required>
-                        </div>
+                        </div> -->
 
                         <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <label for="message">How can I help?</label>
+                            <textarea id="message" name="message" rows="6" maxlength="1000" required></textarea>
                         </div>
 
                         <div class="form-group">
@@ -373,8 +374,7 @@
             </div>
         </div>
     </section>
-
-    <!-- for develpor text -->
+    
     <script>
         window.addEventListener('resize', function () {
             var textElement = document.getElementById('myText');

@@ -59,7 +59,6 @@ function moveText(event) {
 
 
 // For skills section animation on hover
-// Get the skills elements by class name
 const skills = document.querySelectorAll(".skill span");
 const tl = gsap.timeline({ paused: true }); // Pause the timeline initially
 skills.forEach((text, index) => {

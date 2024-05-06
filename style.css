@@ -548,6 +548,13 @@ form {
   margin-left: 10px;
 }
 
+@media screen and (min-width:670px) {
+  form {
+    display: grid;
+    gap: 18px;
+  }
+}
+
 .form-group {
   margin-bottom: 20px;
   color: var(--bgDark);
@@ -566,6 +573,7 @@ textarea {
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  max-width: 500px;
 }
 
 .contact-card {
